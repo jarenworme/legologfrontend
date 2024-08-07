@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/legologfrontend/static/css/main.5954dc64.css",
-    "main.js": "/legologfrontend/static/js/main.2f38abe9.js",
+    "main.js": "/legologfrontend/static/js/main.e1766621.js",
     "static/js/453.a6d23864.chunk.js": "/legologfrontend/static/js/453.a6d23864.chunk.js",
     "static/media/boxes5.JPG": "/legologfrontend/static/media/boxes5.09bef70c044d39c88a76.JPG",
     "static/media/Lego-Trend.jpg": "/legologfrontend/static/media/Lego-Trend.f63b91198d521e219f82.jpg",
@@ -9,11 +9,11 @@
     "static/media/stormtrooper-computer-edited.jpeg": "/legologfrontend/static/media/stormtrooper-computer-edited.24edff53256c3f39638d.jpeg",
     "index.html": "/legologfrontend/index.html",
     "main.5954dc64.css.map": "/legologfrontend/static/css/main.5954dc64.css.map",
-    "main.2f38abe9.js.map": "/legologfrontend/static/js/main.2f38abe9.js.map",
+    "main.e1766621.js.map": "/legologfrontend/static/js/main.e1766621.js.map",
     "453.a6d23864.chunk.js.map": "/legologfrontend/static/js/453.a6d23864.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5954dc64.css",
-    "static/js/main.2f38abe9.js"
+    "static/js/main.e1766621.js"
   ]
 }
