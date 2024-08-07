@@ -36,7 +36,8 @@ export const Login = () => {
             localStorage.setItem('access_token', data.access);
             localStorage.setItem('refresh_token', data.refresh);
             axios.defaults.headers.common['Authorization'] = `Bearer ${data['access']}`;
-            window.location.href = '/'
+            navigate('/', { replace: false });
+            //window.location.href = '#'
         } catch (err) {
             // Set error message if login fails
             setError('Incorrect username or password.');
@@ -51,7 +52,7 @@ export const Login = () => {
                 <div className="title-wrapper">
                     <h3 className="auth-title">Welcome to</h3>
                     <div className="span-wrapper auth-logo-span">
-                        <span className="auth-logo-1">L</span>
+                        <span className="auth-logo-1">Ll</span>
                         <span className="auth-logo-2">E</span>
                         <span className="auth-logo-3">G</span>
                         <span className="auth-logo-4">O</span>

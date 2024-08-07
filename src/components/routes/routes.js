@@ -22,62 +22,20 @@ export default function Router (){
         {
             path: '/',
             children: [
-                {
-                    path: '/',
-                    element: <Home />
-                },
-                {
-                    path: '/register',
-                    element: <Register />
-                },
-                {
-                    path: '/login',
-                    element: <Login />
-                },
-                {
-                    path: "/logout",
-                    element: <Logout />
-                },
-                {
-                    path: '/SetList',
-                    element: <SetList />
-                },
-                {
-                    path: '/PieceList',
-                    element: <PieceList />
-                },
-                {
-                    path: '/SetDetail/page/:prevPage/set/:setId',
-                    element: <SetDetail />
-                },
-                {
-                    path: '/AddNewSet',
-                    element: <AddNewSet />
-                },
-                {
-                    path: '/AddNewPiece/page/:prevPage/set/:setId/data/:missing',
-                    element: <AddNewPiece />
-                },
-                {
-                    path: '/EditSet/page/:prevPage/set/:setId',
-                    element: <EditSet />
-                },
-                {
-                    path: '/EditPiece/page/:prevPage/set/:setId/piece/:pieceId/thr/:threshold',
-                    element: <EditPiece />
-                },
-                {
-                    path: "/Stats",
-                    element: <Stats />
-                },
-                {
-                    path: "/OnlineStats",
-                    element: <OnlineStats />
-                },
-                {
-                    path: "/About",
-                    element: <About />
-                },
+                {path: '/', element: <Home />},
+                {path: '/register', element: <Register />},
+                {path: '/login', element: <Login />},
+                {path: "/logout", element: <Logout />},
+                {path: '/SetList', element: <SetList />},
+                {path: '/PieceList', element: <PieceList />},
+                {path: '/SetDetail/page/:prevPage/set/:setId', element: <SetDetail />},
+                {path: '/AddNewSet', element: <AddNewSet />},
+                {path: '/AddNewPiece/page/:prevPage/set/:setId/data/:missing', element: <AddNewPiece />},
+                {path: '/EditSet/page/:prevPage/set/:setId', element: <EditSet />},
+                {path: '/EditPiece/page/:prevPage/set/:setId/piece/:pieceId/thr/:threshold', element: <EditPiece />},
+                {path: "/Stats", element: <Stats />},
+                {path: "/OnlineStats", element: <OnlineStats />},
+                {path: "/About", element: <About />},
             ]
         },
     ]);

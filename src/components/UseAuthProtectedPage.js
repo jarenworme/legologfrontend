@@ -9,7 +9,7 @@ export const useAuthProtectedPage = (redirectUrl) => {
             try {
                 const accessToken = localStorage.getItem('access_token');
                 if (!accessToken) {
-                    window.location.href = redirectUrl;
+                    window.location.href = '#' + redirectUrl;
                     return;
                 }
 
