@@ -1,0 +1,194 @@
+:root{
+    --primary: #0587D0;
+    --primary-light: #64B4E2;
+    --primary-dark: #4F7292;
+    --primary-disabled: #DEEDF5;
+
+    --secondary: #222222;
+    --secondary-light: #555555;
+    --secondary-dark: #161616;
+    --secondary-disabled: #DBDBDB;
+
+    --background: #ECECEC;
+
+    --accent-crimson: #E23636;
+    --accent-saffron: #FFE601;
+    --accent-forest-green: #228B22;
+    --accent-lime: #54DD3E;
+    --accent-orange: #FFA800;
+    --accent-pink: #F351A9;
+    --accent-purple: #9E07FA;
+    --accent-cobalt: #0047AB;
+    --accent-sky-blue: #87CEEB;
+    --accent-titanium-white: #FFFFFF;	
+    --accent-black: #000000;
+    --accent-burnt-sienna: #AB4A13;
+    --accent-sand-green: #A0BCAC;
+}
+
+.outer-container {
+    padding-top: 10vh;
+    background-color: var(--background);
+    min-height: 90vh;
+}
+
+.list-title-wrapper {
+    position: fixed;
+    width: 20%;
+    top: 2vh;
+    left: 40%;
+}
+
+.list-title {
+    margin: 0;
+    padding: 0;
+    color: var(--accent-titanium-white);
+    font-weight: normal;
+}
+
+.all-sets, .all-pieces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3% 3% 3%;
+}
+
+.set-card, .piece-card {
+    margin-top: 1.5%;
+    background-color: var(--accent-titanium-white);
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2.5px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.last-odd {
+    margin-bottom: 1.5%;
+}
+
+.set-card-button, .piece-card-button {
+    padding: 2%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border: none;
+}
+
+.set-card-color-bar, .piece-card-color-bar{
+    height: 4px;
+    width: 100%;
+    margin: 1% 0;
+
+    transition: width 1s cubic-bezier(0.5, 0.85, 0.55, 0.9);
+}
+
+.set-card-button:hover, .piece-card-button:hover {
+    cursor: pointer;
+    padding: 2.5% 2%;
+    width: 90%;
+}
+
+.set-card-button:hover .set-card-color-bar, .piece-card-button:hover .piece-card-color-bar{
+    width: 10%;
+}
+
+.set-card-title, .piece-card-title, .piece-card-set-info {
+    margin: 0 1%;
+    font-weight: lighter;
+}
+
+.set-card-title {
+    font-size: x-large;
+}
+
+.piece-card-title {
+    margin-bottom: 4px;
+    font-size: xx-large;
+}
+
+.piece-card-set-info {
+    margin-top: 4px;
+    font-size: large;
+}
+
+.set-card-bottom-wrapper {
+    margin: 0 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.set-card-number, .set-card-pieces {
+    margin: 0 5% 0 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+.xmark-icon-wrapper {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xmark-icon {
+    width: 48%;
+    height: 48%;
+}
+
+.xmark-icon:hover {
+    cursor: pointer;
+    width: 51%;
+    height: 51%;
+    animation: xmarkFlip 2s;
+}
+
+@keyframes xmarkFlip {
+    15% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in;
+    }
+    33% {
+        transform: rotate(180deg);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: rotate(390deg);
+        animation-timing-function: ease-in-out;
+    }
+    75% {
+        transform: rotate(340deg);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: rotate(360deg);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+.add-set-button {
+    position: fixed;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    width: 40%;
+    height: 10vh;
+    bottom: 3%;
+    right: 2%;
+    color: var(--accent-titanium-white);
+    font-size: 140%;
+}
+
+.add-set-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-light);
+}

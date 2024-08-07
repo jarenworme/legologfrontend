@@ -1,0 +1,162 @@
+:root{
+    --primary: #0587D0;
+    --primary-light: #64B4E2;
+    --primary-dark: #4F7292;
+    --primary-disabled: #DEEDF5;
+
+    --secondary: #222222;
+    --secondary-light: #555555;
+    --secondary-dark: #161616;
+    --secondary-disabled: #DBDBDB;
+
+    --background: #ECECEC;
+
+    --accent-crimson: #E23636;
+    --accent-saffron: #FFE601;
+    --accent-forest-green: #228B22;
+    --accent-lime: #54DD3E;
+    --accent-orange: #FFA800;
+    --accent-pink: #F351A9;
+    --accent-purple: #9E07FA;
+    --accent-cobalt: #0047AB;
+    --accent-sky-blue: #87CEEB;
+    --accent-titanium-white: #FFFFFF;	
+    --accent-black: #000000;
+    --accent-burnt-sienna: #AB4A13;
+    --accent-sand-green: #A0BCAC;
+}
+
+.outer-container-add {
+    background-color: var(--accent-titanium-white);
+    margin: 0 25vw;
+}
+
+.add-top-container {
+   justify-content: left;
+}
+
+.add-title-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.add-title {
+    margin: 0;
+    padding: 3vh 0 0 4vw;
+    color: var(--primary);
+}
+
+.add-subtitle-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.add-subtitle {
+    margin: 0;
+    padding: 1vh 4vw 0 4vw;
+    font-size: large;
+    text-align: left;
+}
+
+.add-middle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-form {
+    width: 80%;
+}
+
+.add-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2vh 0;
+}
+
+.size-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.add-field-title {
+    margin: 4px 1%;
+    font-size: larger;
+}
+
+.add-field-input {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    border: 1px solid var(--accent-black);
+    border-radius: 4px;
+    padding: 1.6%;
+    font-size: medium;
+}
+
+.add-field-input-size {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    border: 1px solid var(--accent-black);
+    border-radius: 4px;
+    padding: 1.6%;
+    font-size: medium;   
+    width: 42%;
+}
+
+.add-piece-x {
+    margin: 0;
+}
+
+.add-field-error {
+    font-size: large;
+    color: var(--accent-crimson);
+    margin: 1% 0 0 1%;
+}
+
+.add-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-cancel-button, .add-submit-button {
+    height: 6vh;
+    width: 12vw;
+    border: none;
+    border-radius: 8px;
+    margin: 3vh 0;
+    color: var(--accent-titanium-white);
+    font-size: large;
+}
+
+.add-cancel-button {
+    background-color: var(--secondary);
+}
+
+.add-cancel-button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-light);
+}
+
+.add-submit-button {
+    background-color: var(--primary);
+}
+
+.add-submit-button:disabled {
+    background-color: var(--primary-disabled);
+}
+
+.add-submit-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-dark);
+}
+
+.add-submit-button:hover:disabled {
+    cursor: not-allowed;
+    background-color: var(--primary-disabled);
+}

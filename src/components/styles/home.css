@@ -1,0 +1,171 @@
+:root{
+    --primary: #0587D0;
+    --primary-light: #64B4E2;
+    --primary-dark: #4F7292;
+    --primary-disabled: #DEEDF5;
+    --primary-translucent: rgba(5, 135, 208, 0.7);
+
+    --secondary: #222222;
+    --secondary-light: #555555;
+    --secondary-dark: #161616;
+    --secondary-disabled: #DBDBDB;
+    --secondary-translucent: rgba(0, 0, 0, 0.6);
+
+    --background: #ECECEC;
+
+    --accent-crimson: #E23636;
+    --accent-saffron: #FFE601;
+    --accent-forest-green: #228B22;
+    --accent-lime: #54DD3E;
+    --accent-orange: #FFA800;
+    --accent-pink: #F351A9;
+    --accent-purple: #9E07FA;
+    --accent-cobalt: #0047AB;
+    --accent-sky-blue: #87CEEB;
+    --accent-titanium-white: #FFFFFF;	
+    --accent-black: #000000;
+    --accent-burnt-sienna: #AB4A13;
+    --accent-sand-green: #A0BCAC;
+}
+
+.home-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 3% 6%;
+    height: 78vh;
+}
+
+.left-home-wrapper {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-nav-button-primary {
+    background-color: var(--primary);
+    background-image: url(/public/boxes5.JPG);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 16px;
+    height: 95%;
+    width: 95%;
+    color: var(--accent-titanium-white);
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s ease;
+}
+
+.home-text-wrapper {
+    background-color: var(--secondary-translucent);
+    width: 60%;
+    margin-top: 20%;
+    border-radius: 12px;
+    transition: background-color 1s ease-in;
+}
+
+.home-text {
+    color: var(--accent-titanium-white);
+    font-weight: lighter;
+    font-size: xx-large;
+    margin: 15px auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.home-nav-button-primary:hover {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.home-nav-button-primary:hover .home-text-wrapper{
+    background-color: var(--secondary);
+}
+
+.right-home-wrapper {
+    width: 50%;
+    height: 100%;
+    padding: 2% 0;
+    margin-left: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-nav-button-wrapper {
+    width: 100%;
+    height: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-nav-button, .home-nav-button-secondary {
+    border: none;
+    border-radius: 16px;
+    color: var(--accent-titanium-white);
+    font-size: x-large;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.home-nav-button {
+    width: 95%;
+    height: 90%;
+    margin: 0.5% 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: height 0.5s ease;
+}
+
+.pieces-image {
+    background-image: url(/public/blue-lego-bricks.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.stats-image {
+    background-image: url(/public/Lego-Trend.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.online-image {
+    background-image: url(/public/stormtrooper-computer-edited.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.online-image, .stats-image {
+    cursor: not-allowed !important;
+}
+
+.home-nav-button:hover {
+    cursor: pointer;
+    width: 110%;
+    height: 100%;
+    margin: 0;
+    font-size: xx-large;
+}
+
+.home-nav-button-wrapper-secondary {
+    width: 100%;
+    height: 16%;
+}
+
+.home-nav-button-secondary {
+    width: 95%;
+    height: 100%;
+    background-color: var(--secondary);
+}
+
+.home-nav-button-secondary:hover {
+    cursor: not-allowed;
+    background-color: var(--secondary-light);
+}
+

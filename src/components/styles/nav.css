@@ -1,0 +1,91 @@
+:root{
+    --primary: #0587D0;
+    --primary-light: #64B4E2;
+    --primary-dark: #4F7292;
+    --primary-disabled: #DEEDF5;
+
+    --secondary: #222222;
+    --secondary-light: #555555;
+    --secondary-dark: #161616;
+    --secondary-disabled: #DBDBDB;
+
+    --background: #ECECEC;
+
+    --accent-crimson: #E23636;
+    --accent-saffron: #FFE601;
+    --accent-forest-green: #228B22;
+    --accent-lime: #54DD3E;
+    --accent-orange: #FFA800;
+    --accent-pink: #F351A9;
+    --accent-purple: #9E07FA;
+    --accent-cobalt: #0047AB;
+    --accent-sky-blue: #87CEEB;
+    --accent-titanium-white: #FFFFFF;	
+    --accent-black: #000000;
+    --accent-burnt-sienna: #AB4A13;
+    --accent-sand-green: #A0BCAC;
+}
+
+.nav-bar {
+    background-color: var(--secondary-dark);
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-logo-span {
+    margin: 0 2vw;
+    font-size: 5.5vh;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.auth-logo-5-nav {
+    color: var(--accent-titanium-white);
+}
+
+.right-nav-wrapper {
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-icon {
+    color: var(--accent-titanium-white);
+}
+
+.home-icon:hover {
+    cursor: pointer;
+    color: var(--primary-disabled);
+}
+
+.contact-link {
+    color: var(--accent-titanium-white);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+    color: var(--primary-disabled);
+}
+
+.logout-button {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-light);
+    color: var(--accent-titanium-white);
+    padding: 1vh 1vw;
+}
+
+.logout-button:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+}
